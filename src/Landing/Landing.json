@@ -1,0 +1,36 @@
+[
+  {
+      "name": "Place 1",
+      "title": "Air quality: Surreal skies grip New Yorkers - in pictures",
+      "description":"The sight of one the most famous skylines on the planet shrouded in an orange hue has made front pages around the world. But for those living and working in New York City, it was a grim and worrying spectacle they could see for themselves.",
+      "image": ["sample3.jpg","sample3.3.webp"],
+      "currentImageIndex": 0
+  },
+    {
+      "name": "Place 1",
+      "title": "CSK wins the Ipl final for the 5th time against GT at Gujrat",
+      "image": ["bigp1.jpg","bigp1.1.webp"],
+      "currentImageIndex": 0
+    },
+    {
+        "name": "Place 1",
+        "title": "Bank of Canada hikes rates to 22-year high, more increases expected",
+        "image": ["smallp1.jpg","smallp1.1.jpg"],
+        "currentImageIndex": 0
+    },
+    {
+        "name": "Place 1",
+        "title": "Enzo Maresca: Leicester City set to name Manchester City assistant coach as boss",
+        "image": ["sample1.jpg","sample1.1.jpg"],
+      "currentImageIndex": 0
+    },
+    {
+        "name": "Place 1",
+        "title": "Colors that can save your life",
+        "image": ["sample2.jpg"],
+      "currentImageIndex": 0
+    }
+    
+    
+   
+  ]
