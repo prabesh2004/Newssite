@@ -34,21 +34,32 @@ body {
     --color-sidetext : #68464E;
     --color-red: #D72004;
     --color-sky : #CBEFF1; 
-    --width-large : 1150px; 
 
 
 }
 .section{
     position: relative;
     top: 5.2rem;
-    /* border: 2px solid blue; */
+    border: 2px solid blue;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    flex-direction: row;
+    width: 100%;
+    height: max-content;
+   justify-content: start;
+    flex-direction: column;
     margin: 0;
     padding: 0;
-    align-items: start;
+    align-items: center;
+}
+.sec{
+    color: black;
+    margin-top: 3rem;
+    width: min(115rem , 95%);
+    /* text-align: center; */
+    line-height: 2.5rem;
+    /* border: 1px solid black; */
+    margin-bottom: 2rem;
+  
 }
 @media (max-width: 768px)  {
     html{

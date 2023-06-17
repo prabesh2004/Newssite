@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar/Navbar";
 import Landing from "./Landing/Landing";
+import World from "./World/World";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
     <div className="section">
 
     <Landing/>
+    <World/>
     </div>
   
     </div>

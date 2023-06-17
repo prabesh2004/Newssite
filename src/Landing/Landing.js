@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import "./Landing.css"
 import Landingdata from "./Landing.json";
-import { useState , useEffect } from 'react';
+
 function Landing() {
   const [currentDate, setCurrentDate] = useState('');
   const [currentDay, setCurrentDay] = useState('');
-
+  const [places, setPlaces] = useState(Landingdata);
 
   useEffect(() => {
     const date = new Date();
@@ -13,12 +13,9 @@ function Landing() {
     const dayOfWeek = date.toLocaleString('default', { weekday: 'long' });
     const month = date.toLocaleString('default', { month: 'long' });
     const year = date.getFullYear();
-setCurrentDay(`${dayOfWeek}`);
-    setCurrentDate(`${day} ${month} , ${year}`);
+    setCurrentDay(`${dayOfWeek}`);
+    setCurrentDate(`${day} ${month}, ${year}`);
   }, []);
-
-
-  const [places, setPlaces] = useState(Landingdata);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -43,54 +40,58 @@ setCurrentDay(`${dayOfWeek}`);
     };
   }, []);
 
-
-
+  const truncateDescription = (description) => {
+    if (description) {
+      const words = description.split(' ');
+      if (words.length > 45) {
+        return words.slice(0, 45).join(' ') + '...';
+      }
+      return description;
+    }
+    return '';
+  };
+  const truncatetitle = (title) => {
+    if (title) {
+      const words = title.split(' ');
+      if (words.length > 15) {
+        return words.slice(0, 15).join(' ') + '..';
+      }
+      return title;
+    }
+    return '';
+  };
 
   return (
-
-<div className='sec'>
-  <h1 className="welcome">Welcome to Sky-News</h1>
-  <div className="headline">
-    <div className="datetime">
-
-    <h2 className="day">{currentDay}</h2>
-    <h2 className="date">{currentDate}</h2>
-    </div>
-   
-    <div className="pallet">
-    {places.map((place, index) => ( 
-      <div key={index} className={index === 0 ? 'bighead' : 'smallhead'}>
-
-      {place.image.map((image, imageIndex) => (
-        <img 
-       
-        key={imageIndex}
-        className={`imgb ${place.currentImageIndex === imageIndex ? 'active' : ''}`}
-        src={`images/${image}`}
-        alt=""
-      />
-
-        ))}
-        <div className="palletcontent">
-        <div className="palletnews">
-<h3 className='newstitle'>{place.title}</h3>
-       
-<p className="newsdescription">{place.description}</p>
+    <div className='sec'>
+      <h1 className="welcome">Welcome to Sky-News</h1>
+      <div className="headline">
+        <div className="datetime">
+          <h2 className="day">{currentDay}</h2>
+          <h2 className="date">{currentDate}</h2>
+        </div>
+        <div className="pallet">
+          {places.map((place, index) => (
+            <div key={index} className={`${index === 0 ? 'bighead' : 'smallhead'} ${index % 2 === 1 ? 'oddclass' : ''} `}>
+              {place.image.map((image, imageIndex) => (
+                <img
+                  key={imageIndex}
+                  className={`imgb ${place.currentImageIndex === imageIndex ? 'active' : ''}`}
+                  src={`images/${image}`}
+                  alt=""
+                />
+              ))}
+              <div className="palletcontent">
+                <div className="palletnews">
+                  <h3 className='newstitle'>{truncatetitle(place.title)}</h3>
+                  <p className="newsdescription">{truncateDescription(place.description)}</p>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-        </div>
-
- 
- 
-  ))}
-   
-
-      
-
-   </div> 
-   </div>
-</div>
-  )
+    </div>
+  );
 }
 
-export default Landing
+export default Landing;

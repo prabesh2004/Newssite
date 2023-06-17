@@ -1,11 +1,3 @@
-.sec{
-    color: black;
-    margin-top: 3rem;
-    width: min(115rem , 95%);
-    /* text-align: center; */
-    line-height: 2.5rem;
-  
-}
 .welcome{
     font-size: 2.2rem;
     text-align: center;
@@ -55,10 +47,12 @@ overflow: hidden;
 background-size: cover;
 display: flex;
 justify-content: flex-start;
+overflow: hidden;
 
 
 
 }
+
 .palletcontent{
     position: relative;
     display: flex;
@@ -83,6 +77,85 @@ font-weight: 400;
 background-size: cover;
 display: flex;
 justify-content: flex-start;
+overflow: hidden;
 
     
+}
+@media (max-width:998px){
+    .newstitle{
+        font-size: 2rem;
+    }
+    .newsdescription{
+        font-size: 1.6rem;
+    }
+}
+@media (max-width: 768px)  {
+    .palletcontent{
+        height: 20rem;
+       
+    }
+    .newstitle{
+        font-weight: 500;
+        position: relative;
+        width: 100%;
+    }
+    .smallhead .palletcontent{
+        display: flex;
+        align-items: flex-start;
+        width: 75%;
+        position: absolute;
+        left: 0;
+        background-color: transparent;
+        color: var(--color-black);
+        padding: 0.5rem 0.3rem;
+overflow: hidden;
+        height: 100%;
+    }
+    .smallhead{
+        display: flex;
+        align-items: center;    
+        position: relative;   
+border-radius: 0.5rem;
+min-height: 10rem;
+/* box-shadow: 0 0 0px rgba(0, 0, 0, 0.2); */
+box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  100px 100px 80px rgba(0, 0, 0, 0.07)
+;
+
+margin-bottom: 0.25rem;
+
+
+    }
+   
+    .smallhead .imgb{
+        width: 22%;
+        height: 80%;
+        right: 0;
+        border-radius: 0.5rem;
+        margin-right: 1rem;
+    }
+
+    .pallet{
+        
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+    }
+    .newsdescription{
+        display: none;
+    }
+    .bighead{
+min-height: 20rem;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+    }
+    .smallhead .newstitle{
+        position: absolute;
+        padding-right: 0.2rem;
+    }
 }
