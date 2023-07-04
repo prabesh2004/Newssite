@@ -71,7 +71,7 @@ function Landing() {
         </div>
         <div className="pallet">
           {places.map((place, index) => (
-            <div key={index} className={`${index === 0 ? 'bighead' : 'smallhead'} ${index % 2 === 1 ? 'oddclass' : ''} `}>
+            <div key={index} className={`${index === 0 ? 'bighead' : 'smallhead'} ${index % 2 === 1 ? 'oddclass' : ''} hidden card`}>
               {place.image.map((image, imageIndex) => (
                 <img
                   key={imageIndex}

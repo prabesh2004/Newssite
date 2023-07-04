@@ -1,0 +1,25 @@
+.Article-intro {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .Article-intro-head {
+    font-size: 2.2rem;
+    color: var(--color-topintro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Article-intro-box {
+    margin: 0 1rem;
+    width: 1rem;
+    height: 2.5rem;
+    background-color: var(--color-red);
+  }
+  
+  .Article-small-intro {
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #888;
+  }

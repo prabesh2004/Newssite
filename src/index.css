@@ -26,6 +26,7 @@ body {
 :root{
     --color-white: #FFFFFF;
     --color-black: #000000;
+    --color-topintro:#333;
     --color-gray : #4A4B4B;
     --color-yellow : #F9F871;
     --color-blue : #30BDC8;
@@ -34,13 +35,12 @@ body {
     --color-sidetext : #68464E;
     --color-red: #D72004;
     --color-sky : #CBEFF1; 
-
+    --color-whitesmoke : rgb(206, 206, 206);
 
 }
 .section{
     position: relative;
     top: 5.2rem;
-    border: 2px solid blue;
     height: 100vh;
     display: flex;
     width: 100%;
@@ -58,17 +58,83 @@ body {
     /* text-align: center; */
     line-height: 2.5rem;
     /* border: 1px solid black; */
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
   
 }
+
+
+.more-news{
+    font-size: 1.7rem;
+    background: transparent;
+    margin-top: 1.5rem;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    font-weight: 600;
+    text-decoration: underline;
+    color: var(--color-gray);
+}
+.hide-ani{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.show-ani{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+   
+}
+.hidden{
+    opacity: 0;
+    filter: blur(2px);
+    transition: all 1s ease-in-out ;
+
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+}
+.card:nth-child(2) {
+    transition-delay: 300ms;
+ }
+.card:nth-child(4) {
+    transition-delay: 300ms;
+ }
+ .card:nth-child(3) {
+    transition-delay: 600ms;
+ }
+ .card:nth-child(5) {
+    transition-delay: 600ms;
+ }
+
 @media (max-width: 768px)  {
     html{
         font-size: 45%;
     }
+    .more-news{
+        font-size: 1.5rem;
+    }
+
 }
 @media (max-width: 998px)
 {
     html{
         font-size: 55%;
     }
+    .sec{
+        margin-bottom: 4rem;
+    }
+}
+@media (max-width: 620px){
+    .hidden{
+        transition: all 500ms ease-out ;
+    }
+    .card:nth-child(2) {
+        transition-delay: 200ms;
+     }
+     .card:nth-child(3){
+        transition-delay: 400ms;
+     }
 }

@@ -52,9 +52,9 @@ function Navbar() {
   return (
     <nav className="navbar">
       
-      <div className="content">
+      <div className="contents">
         <div className="login"> <span className="logo">SKY-NEWS</span> 
-        <FontAwesomeIcon className='user' icon={ faUser } />
+        <FontAwesomeIcon className='user' icon={ faUser } /> <a className="sign-in" href="">Sign in</a>
  </div>
         <button className={`navbar-toggle ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
           <span className="toggle-icon"><GiHamburgerMenu className='burger'/></span>

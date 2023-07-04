@@ -1,9 +1,8 @@
 import React from 'react';
-import './World.css';
-import WorldData from './World.json';
+import './Local.css';
+import LocalData from './Local.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
-
 function truncateText(text, maxWords) {
   const words = text.split(' ');
   if (words.length > maxWords) {
@@ -12,22 +11,19 @@ function truncateText(text, maxWords) {
   return text;
 }
 
-function World() {
-
- 
-
+function Local() {
   return (
-    <div className="sec world-section">
-      <div className="world-intro hide-ani">
-        <h1 className="world-intro-head">
-          <span className="world-intro-box"></span> World <span className="world-intro-box"></span>
+    <div className="sec local-section">
+      <div className="local-intro hide-ani">
+        <h1 className="local-intro-head">
+          <span className="local-intro-box"></span> Local <span className="local-intro-box"></span>
         </h1>
-        <h3 className="world-small-intro">News from all over the globe</h3>
+        <h3 className="local-small-intro">News from all over the local area</h3>
       </div>
 
-      <div className="news-grid" >
-        {WorldData.map((item, index) => (
-          <div className="news-card hidden card" key={index}>
+      <div className="news-grid">
+        {LocalData.map((item, index) => (
+          <div className="localnews-card hidden card" key={index}>
             <div className="news-image">
               <img className="news-image-img" src={item.image} alt="" />
             </div>
@@ -36,21 +32,15 @@ function World() {
               <p className="news-description">{truncateText(item.description, 30)}</p>
             </div>
             <div className="news-footer">
-              <span className="news-country">{item.country}</span>
+              <span className="localnews-place">{item.place}</span>
               <span className="news-date">{item.date}</span>
             </div>
           </div>
         ))}
       </div>
-      <button className="more-news hidden">
-        More World News <FontAwesomeIcon color="var(--color-blue)" icon={faAngleDoubleRight} />
-      </button>
+      <button className="more-news hidden">More Local News   <FontAwesomeIcon color='var(--color-red)' icon={faAngleDoubleRight} />  </button>
     </div>
   );
 }
 
-export default World;
-
-
-
-
+export default Local;
