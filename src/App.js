@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect} from "react";
 import React from "react";
 import Navbar from "./Navbar/Navbar";
 import Landing from "./Landing/Landing";
@@ -42,18 +42,23 @@ function App() {
   
   }, []);
 
+
+
+
+ 
   return (
   <div>
-    <Navbar/>
-    <div className="section">
 
+           
+    <Navbar/>
+  
+    <div className="section">
     <Landing/>
     <World/>
     <Local/>
     <Sports/>
     <Articles/>
     </div>
-  
     </div>
   );
 }

@@ -54,10 +54,7 @@ border-radius: 1rem;
   color: var( --color-bg-variant);
 }
 
-a{
-  color: black;
-  
-}
+
 .login {
   width: 50%;
   display: flex;

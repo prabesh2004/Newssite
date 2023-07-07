@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './Navbar.css'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import {RxCross2} from 'react-icons/rx'
 import { FaSearch } from 'react-icons/fa';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
 import { faUser } from '@fortawesome/free-solid-svg-icons';
+import {  Link } from "react-router-dom";
 
 
  
@@ -24,18 +25,8 @@ function Navbar() {
     setMenuOpen(!isMenuOpen);
   };
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-       const currentDate = new Date().toLocaleDateString([], {  month: 'long', day: 'numeric' });
-      const currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-      setCurrentDateTime(`${currentDate}-${currentTime}`);
-    }, 1000);
- 
 
-    return () => {
-      clearInterval(timer);
-    };
-  }, []);
+
   function doublef(){
  if(!isSearchVisible){
   return `visible`
@@ -62,12 +53,12 @@ function Navbar() {
       
       <ul className={`navbar-menu ${isMenuOpen ? 'active' : ''}`}>
      
-        <li className={doublef()}><a href="#" className='nav-a'>Home</a></li>
-        <li className={doublef()}><a href="#" className='nav-a'>World</a></li>
-        <li className={doublef()}><a href="#" className='nav-a'>Local</a></li>
-        <li className={doublef()}><a href="#" className='nav-a'>Sports</a></li>
-        <li className={doublef()}><a href="#" className='nav-a'>Articles</a></li>
-        <li className={doublef()}><a href="#" className='nav-a'>Weather</a></li>
+        <li className={doublef()}><Link to={"/"} className='nav-a'>Home</Link></li>
+        <li className={doublef()}><Link to={"/world"} className='nav-a'>World</Link></li>
+        <li className={doublef()}><Link to={"/local"} className='nav-a'>Local</Link></li>
+        <li className={doublef()}><Link to={"/sport"} className='nav-a'>Sport</Link></li>
+        <li className={doublef()}><Link to={"/article"} className='nav-a'>Article</Link></li>
+        <li className={doublef()}><Link to={"/weather"} className='nav-a'>Weather</Link></li>
 
         <li>
           
