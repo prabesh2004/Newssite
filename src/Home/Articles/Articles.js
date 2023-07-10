@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import './Articles.css';
 import articles from './Articles.json';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 function truncateText(text, limit) {
   const words = text.split(' ');
@@ -31,16 +34,16 @@ function Articles() {
   }, []);
 
   return (
-    <div className="sec section">
+    <div className="sec article-section">
       <div className="Article-intro">
         <h1 className="Article-intro-head">
-          <span className="Article-intro-box"></span> Article <span className="sport-intro-box"></span>
+          <span className="Article-intro-box"></span> Article <span className="Article-intro-box"></span>
         </h1>
         <h3 className="Article-small-intro">Best articles from our developers</h3>
       </div>
       <div className="article-container">
         {articles.map((article, index) => (
-          <div className="article-card" key={index}>
+          <div className="article-card hidden" key={index}>
             <div className="article-content">
               <h1 className="article-title">{truncateText(article.title, 12)}</h1>
               <p className="article-dec">
@@ -56,9 +59,18 @@ function Articles() {
                 <img src={article.image} alt="" className="article-img" />
               </div>
             </div>
+
           </div>
         ))}
       </div>
+      <Link
+      to={"/article"}
+      className='link'
+      >
+      <button className="more-news articles hidden">
+        More Articles <FontAwesomeIcon color="var(--color-blue)" icon={faAngleDoubleRight} />
+      </button>
+      </Link>
     </div>
   );
 }

@@ -73,7 +73,9 @@ border-radius: 1rem;
 
 
 }
+
 .user{
+  color: var(--color-white);
   height: 2.1rem;
 margin-left: 2rem;
 }
@@ -96,7 +98,12 @@ margin-left: 2rem;
   border: none;
   cursor: pointer;
 }
-
+.iactive{
+  color: var(--color-dark);
+  border-bottom: 0.25rem solid var(--color-dark);
+ 
+ 
+} 
 .toggle-icon {
   display: flex;
 align-items: center;
@@ -124,6 +131,8 @@ justify-content: center;
   font-size: 1.2rem;
   font-weight: 600;
   text-decoration: underline;
+ 
+  cursor: pointer;
 }
 .search-bar{
   display: flex;
@@ -145,6 +154,7 @@ justify-content: center;
 
 
 @media (max-width: 768px) {
+
  
 .contents{
   min-width: 94%;

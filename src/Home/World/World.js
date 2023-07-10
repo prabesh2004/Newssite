@@ -3,7 +3,7 @@ import './World.css';
 import WorldData from './World.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
-
+import { Link } from 'react-router-dom';
 function truncateText(text, maxWords) {
   const words = text.split(' ');
   if (words.length > maxWords) {
@@ -42,9 +42,14 @@ function World() {
           </div>
         ))}
       </div>
+     
       <button className="more-news hidden">
-        More World News <FontAwesomeIcon color="var(--color-blue)" icon={faAngleDoubleRight} />
+      <Link 
+      className='link'
+      to={"/world"}>
+        More World News <FontAwesomeIcon color="var(--color-blue)" icon={faAngleDoubleRight} /></Link>  
       </button>
+      
     </div>
   );
 }

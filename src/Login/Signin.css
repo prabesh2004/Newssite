@@ -1,0 +1,101 @@
+.signin-container {
+width: min(50rem,95%);
+  
+  margin: 0 auto;
+  margin-top: 5.2rem;
+
+  padding: 1.25rem 2rem;
+  background-color: var(--color-black);
+  border-radius: 5px;
+  color: var(--color-white);
+}
+
+.signin-container h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  
+}
+.Cross{
+  text-align: end;
+  cursor: pointer;
+}
+.log-text{
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--color-gray);
+  margin-bottom: 0.5rem;
+
+}
+
+.input-group {
+  margin-bottom: 10px;
+  color: var(--color-dark);
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1.4rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 8px;
+  font-size: 1.45rem;
+  border-radius: .8rem;
+  border: 1px solid #ccc;
+}
+
+.button-group {
+  text-align: center;
+}
+
+.click{
+  font-size: 1.6rem;
+  padding: .5rem 1.5rem;
+  background-color: var(--color-blue);
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+
+  color: var(--color-black);
+  border-radius: .5rem;
+
+}
+.last{
+margin-top: 3rem;
+  display: flex;
+  align-items: center;
+justify-content: space-between;
+  width: 100%;
+  margin-bottom: 3rem;
+  
+}
+.forget{
+  padding: 0;
+  font-size: 1.6rem;
+  background-color: transparent;
+  border: none;
+  color: var(--color-white);
+  text-decoration: underline;
+  cursor: pointer;
+}
+.log-text span{
+  color: var(--color-white);
+  font-size: 1.5rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.socials{
+
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin: 2rem;
+  margin-top: 3rem;
+  color: var(--color-blue);
+  cursor: pointer;
+}
+

@@ -1,0 +1,28 @@
+[
+    {
+       
+        "title": "Osmanabad: The tortured Indian labourers who were kept as slaves",
+        "description":"For the past month, Mr Ghukse had been kept captive in a squalid shanty in the western state of Maharashtra along with six other daily-wage workers. The workers were hired by some contractors in the state's Osmanabad district to dig wells, but were later forced into bonded labour which is illegal in India.",
+        "image": "worldimages/indian.webp",
+        "country":"India",
+        "date":"2 November, 2023"
+
+    },
+      {
+       
+        "title": "Erdogan urges Europe to revive Turkish EU membership talks in exchange for Swedish NATO accession",
+        "description":"VILNIUS, Lithuania (AP) — Turkish President Recep Tayyip Erdogan on Monday introduced a new condition for approving Sweden’s membership in NATO, calling on European countries to “open the way” for Turkey to join the European Union.",
+        "image": "worldimages/europe.webp",
+        "country":"Europe",
+        "date":"2 November, 2023"
+        
+      },
+      {
+        "title": "DeSantis unveils an aggressive immigration and border security policy that largely mirrors Trump’s",
+        "description":"EAGLE PASS, Texas (AP) — Republican presidential candidate Ron DeSantis promised to end birthright citizenship, finish building the southern border wall and send U.S.",
+        "image": "worldimages/usa.webp",
+        "country":"USA",
+        "date":"2 November, 2023"
+      }
+      
+]

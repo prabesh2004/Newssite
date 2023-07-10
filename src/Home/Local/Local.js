@@ -3,6 +3,7 @@ import './Local.css';
 import LocalData from './Local.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 function truncateText(text, maxWords) {
   const words = text.split(' ');
   if (words.length > maxWords) {
@@ -37,9 +38,13 @@ function Local() {
             </div>
           </div>
         ))}
+       
       </div>
+      <Link  to={"/local"} className='link'>
       <button className="more-news hidden">More Local News   <FontAwesomeIcon color='var(--color-red)' icon={faAngleDoubleRight} />  </button>
+      </Link>
     </div>
+    
   );
 }
 

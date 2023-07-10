@@ -3,6 +3,7 @@ import './Sports.css';
 import SportData from './Sports.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 function truncateText(text, maxWords) {
   const words = text.split(' ');
   if (words.length > maxWords) {
@@ -40,7 +41,9 @@ function Sports() {
           </div>
         ))}
       </div>
+      <Link to={"/sport"} className='link'>
       <button className="more-news hidden">More Sport News   <FontAwesomeIcon  color='var(--color-purple)' icon={faAngleDoubleRight} />  </button>
+      </Link>
     </div>
   );
 }
