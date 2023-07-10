@@ -5,6 +5,7 @@ import World from "./Home/World/World";
 import Local from "./Home/Local/Local";
 import Sports from "./Home/Sports/Sports";
 import Articles from "./Home/Articles/Articles";
+import Footer from './Footer/Footer';
 
 function App() {
 
@@ -50,7 +51,9 @@ function App() {
         <Local/>
         <Sports/>
         <Articles/>
+       
       </div>
+      <Footer/>
     </div>
   );
 }
