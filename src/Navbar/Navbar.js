@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState} from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import './Navbar.css';
 import { GiHamburgerMenu } from 'react-icons/gi';
@@ -32,13 +32,16 @@ function Navbar() {
     console.log('hello');
   }
 
+
+
+
   return (
     <nav className="navbar">
       <div className="contents">
         <div className="login">
-          <span className="logo">SKY-NEWS</span>
+          <Link className="link" to={'/'}><span className="logo">SKY-NEWS</span></Link>
 
-          <Link to={"/signin"}>
+          <Link to={"/signin"} >
           <FontAwesomeIcon className="user" icon={faUser} /></Link>
           <Link className="sign-in" to={"/signin"}>
             Sign in

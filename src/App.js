@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import Navbar from "./Home/Navbar/Navbar";
+import Navbar from "./Navbar/Navbar";
 import Landing from "./Home/Landing/Landing";
 import World from "./Home/World/World";
 import Local from "./Home/Local/Local";
@@ -22,7 +22,7 @@ function App() {
     const hidden = document.querySelectorAll('.hidden');
     hidden.forEach((element) => observer.observe(element));
   }
- 
+
   // Animation for cards 
   function observeText() {
     const observer = new IntersectionObserver((entries) => {
@@ -36,24 +36,25 @@ function App() {
     const textani = document.querySelectorAll('.hide-ani');
     textani.forEach((element) => observer.observe(element));
   }
-  
-  useEffect(() => {
-    observeText();
-    observeNewsGridElements();
-  }, []);
+
+useEffect(() => {
+  observeText();
+  observeNewsGridElements();
+}, []);
+
 
   return (
     <div>
-      <Navbar/>
+      <Navbar />
       <div className="section">
-        <Landing/>
-        <World/>
-        <Local/>
-        <Sports/>
-        <Articles/>
-       
+        <Landing />
+        <World />
+        <Local />
+        <Sports />
+        <Articles />
       </div>
-      <Footer/>
+      <Footer />
+     
     </div>
   );
 }

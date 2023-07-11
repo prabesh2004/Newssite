@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import Navbar from './Home/Navbar/Navbar';
+import Navbar from "./Navbar/Navbar"
 import {
     createBrowserRouter,
     RouterProvider,
@@ -16,7 +16,7 @@ import Signin from './Login/Signin';
     {
         path: "/world",
         element: <div className="section">
-            <Navbar/>
+          <Navbar/>
             <div className='news-title'>World page! Comming soon.....</div>
         </div>,
       },
