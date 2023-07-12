@@ -19,6 +19,8 @@ width: min(50rem,95%);
   text-align: end;
   cursor: pointer;
 }
+
+
 .log-text{
   text-align: center;
   font-size: 1.4rem;
@@ -29,7 +31,7 @@ width: min(50rem,95%);
 }
 
 .input-group {
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
   color: var(--color-dark);
 }
 
@@ -41,7 +43,7 @@ width: min(50rem,95%);
 
 .input-group input {
   width: 100%;
-  padding: 8px;
+  padding: 0.8rem;
   font-size: 1.45rem;
   border-radius: .8rem;
   border: 1px solid #ccc;
@@ -63,6 +65,10 @@ width: min(50rem,95%);
   color: var(--color-black);
   border-radius: .5rem;
 
+}
+.full{
+  width: 100%;
+  background-color: rgb(64, 255, 64);
 }
 .last{
 margin-top: 3rem;

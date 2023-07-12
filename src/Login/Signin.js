@@ -5,7 +5,7 @@ import {FaFacebook} from "react-icons/fa"
 import {FaGoogle} from "react-icons/fa"
 import {FaTwitter} from "react-icons/fa"
 import {FaGithub} from "react-icons/fa"
-import { useNavigate } from 'react-router-dom';
+import { useNavigate ,Link } from 'react-router-dom';
 function Signin(){
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -59,7 +59,7 @@ function Signin(){
           <button className='click' type="submit">SIGN IN</button>
           <button className="forget">Forgot password?</button>
           </div>
-          <h3 className="log-text">Don't Have an account? <span>SIGN UP</span></h3>
+          <Link to={"/signup"}><h3 className="log-text">Don't Have an account? <span>SIGN UP</span></h3></Link>
           <div className="socials">
           <FaGoogle size={30}/>
             <FaFacebook size={30}/>
