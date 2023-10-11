@@ -42,6 +42,7 @@ overflow: hidden;
 .bighead{
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
+    background-color: black;
     position: relative;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 background-size: cover;

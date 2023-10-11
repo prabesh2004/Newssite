@@ -8,7 +8,7 @@
 position: fixed;
 width: 100%;
 top: 0;
-padding: 1rem 0;
+padding: 1.1rem  0;
 z-index: 2;
 }
 .contents{
@@ -48,7 +48,7 @@ border-radius: 1rem;
  padding: 0 0.5rem;
 }
 .logo {
-  font-family: 'poppins';
+ font-family: 'Playfair Display', serif;
   font-size: 2.2rem;
   font-weight: 600;
   color: var( --color-bg-variant);

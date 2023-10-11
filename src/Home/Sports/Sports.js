@@ -1,6 +1,6 @@
 import React from 'react';
 import './Sports.css';
-import SportData from './Sports.json';
+import SportData from '../../Json/Sports.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
@@ -26,19 +26,23 @@ function Sports() {
 
       <div className="news-grid">
         {SportData.map((item, index) => (
-          <div className="sportsnews-card hidden card" key={index}>
-            <div className="news-image">
-              <img className="news-image-img" src={item.image} alt="" />
-            </div>
-            <div className="news-content">
-              <h1 className="news-title">{truncateText(item.title, 12)}</h1>
-              <p className="news-description">{truncateText(item.description, 30)}</p>
-            </div>
-            <div className="news-footer">
-              <span className="news-game">{item.game}</span>
-              <span className="news-date">{item.date}</span>
-            </div>
-          </div>
+           <Link key={item.id} to={`/news/Sports/${item.id}`}>
+         <div className="news-card hidden card" key={index}>
+                     
+         <div className="news-image">
+           <img className="news-image-img" src={item.image} alt="" />
+         </div>
+         <div className="news-content">
+           <h1 className="news-title">{truncateText(item.title, 12)}</h1>
+           <p className="news-description">{truncateText(item.description, 30)}</p>
+         </div>
+         <div className="news-footer">
+           <span className="news-country">{item.type}</span>
+           <span className="news-date">{item.date}</span>
+         </div>
+        
+       </div>
+       </Link>
         ))}
       </div>
       <Link to={"/sport"} className='link'>

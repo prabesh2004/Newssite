@@ -1,0 +1,35 @@
+[
+    {
+       "id":1,
+        "title": "Osmanabad: The tortured Indian labourers who were kept as slaves",
+        "description":"For the past month, Mr Ghukse had been kept captive in a squalid shanty in the western state of Maharashtra along with six other daily-wage workers. The workers were hired by some contractors in the state's Osmanabad district to dig wells, but were later forced into bonded labour which is illegal in India.",
+        "image": "/worldimages/indian.webp",
+        "type":"India",
+        "date":"2 November, 2023",
+        "paragraphs":["For the past month, Mr Ghukse had been kept captive in a squalid shanty in the western state of Maharashtra along with six other daily-wage workers. The workers were hired by some contractors in the state's Osmanabad district to dig wells, but were later forced into bonded labour which is illegal in India.",
+      "Mr Ghukse described the dehumanising living conditions, of being beaten, drugged and forced into long hours of manual labour with little food or water. At night, the workers would be chained to tractors so that they couldn't escape. And when they couldn't sleep, restless from pain, hunger and fatigue, Mr Gukse said the men would lash them with sticks and then forcefully sedate them with alcohol.",
+      "Mr Ghukse managed to reach his village and informed the police about the torture, following which officials rescued 11 other workers from two separate wells run by the same contractors."]
+
+    },
+      {
+        
+       "id":2,
+        "title": "Erdogan urges Europe to revive Turkish EU membership talks in exchange for Swedish NATO accession",
+        "description":"VILNIUS, Lithuania (AP) — Turkish President Recep Tayyip Erdogan on Monday introduced a new condition for approving Sweden’s membership in NATO, calling on European countries to “open the way” for Turkey to join the European Union.",
+        "image": "/worldimages/europe.webp",
+        "type":"Europe",
+        "date":"2 November, 2023",
+        "paragraphs":["At talks in the Lithuanian capital Vilnius, where U.S. President Joe Biden and his NATO counterparts are meeting for a two-day summit starting Tuesday, President Recep Tayyip Erdogan committed to put the Nordic country’s accession protocol before Parliament “as soon as possible,” the head of NATO said.",
+      "“This is an historic day because we have a clear commitment by Turkey to submit the ratification documents to the Grand National Assembly, and to work also with the assembly to ensure ratification,” NATO Secretary-General Jens Stoltenberg told reporters after a series of high-stakes meetings."]
+        
+      },
+      {"id":3,
+        "title": "DeSantis unveils an aggressive immigration and border security policy",
+        "description":"EAGLE PASS, Texas (AP) — Republican presidential candidate Ron DeSantis promised to end birthright citizenship, finish building the southern border wall and send U.S.",
+        "image": "/worldimages/usa.webp",
+        "type":"USA",
+        "date":"2 November, 2023",
+        "paragraphs":[]
+      }
+      
+]

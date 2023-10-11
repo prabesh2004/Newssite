@@ -1,6 +1,6 @@
 import React from 'react';
 import './Local.css';
-import LocalData from './Local.json';
+import LocalData from '../../Json/Local.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
@@ -24,19 +24,24 @@ function Local() {
 
       <div className="news-grid">
         {LocalData.map((item, index) => (
+          <Link key={item.id} to={`/news/Local/${item.id}`} >
           <div className="localnews-card hidden card" key={index}>
-            <div className="news-image">
-              <img className="news-image-img" src={item.image} alt="" />
-            </div>
+          
+            <div className="news-image ">
+              <img className="news-image-img" src={item.image} alt="News image" />
+            </div>  
             <div className="news-content">
               <h1 className="news-title">{truncateText(item.title, 12)}</h1>
               <p className="news-description">{truncateText(item.description, 30)}</p>
             </div>
             <div className="news-footer">
-              <span className="localnews-place">{item.place}</span>
+              <span className="localnews-place">{item.type}</span>
               <span className="news-date">{item.date}</span>
+             
             </div>
+            
           </div>
+          </Link>
         ))}
        
       </div>

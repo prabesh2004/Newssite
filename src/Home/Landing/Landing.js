@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import "./Landing.css"
-import Landingdata from "./Landing.json";
+import Landingdata from "../../Json/Landing.json";
 
 function Landing() {
   const [currentDate, setCurrentDate] = useState('');
@@ -71,7 +71,7 @@ function Landing() {
         </div>
         <div className="pallet">
           {places.map((place, index) => (
-            <div key={index} className={`${index === 0 ? 'bighead' : 'smallhead'} ${index % 2 === 1 ? 'oddclass' : ''} hidden card`}>
+            <div key={index} className={`${index === 0 ? 'bighead' : 'smallhead'} hidden`}>
               {place.image.map((image, imageIndex) => (
                 <img
                   key={imageIndex}

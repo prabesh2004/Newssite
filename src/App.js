@@ -15,6 +15,9 @@ function App() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add('show');
+        }else{
+          entry.target.classList.remove("show")
+          entry.target.classList.add("hidden")
         }
       });
     });
@@ -29,6 +32,9 @@ function App() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add('show-ani');
+        }else{
+          entry.target.classList.remove("show-ani")
+          entry.target.classList.add("hide-ani")
         }
       });
     });
@@ -48,7 +54,9 @@ useEffect(() => {
       <Navbar />
       <div className="section">
         <Landing />
+       
         <World />
+       
         <Local />
         <Sports />
         <Articles />
@@ -60,8 +68,3 @@ useEffect(() => {
 }
 
 export default App;
-
-
-
-
-

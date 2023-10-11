@@ -1,5 +1,5 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@700&family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@400;500&family=Poppins:wght@400;500&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -81,38 +81,27 @@ body {
 .hide-ani{
     opacity: 0;
     filter: blur(5px);
-    transform: translateX(-100%);
+    /* transform: translateX(-100%); */
     transition: all 800ms;
 }
 .show-ani{
     opacity: 1;
     filter: blur(0);
-    transform: translateX(0);
    
 }
 .hidden{
     opacity: 0;
     filter: blur(2px);
-    transition: all 800ms ease-in-out ;
+    transition: all 800ms ease-out ;
+    /* transform: translateX(-20px); */
 
 }
 .show{
     opacity: 1;
     filter: blur(0);
+    /* transform: translateX(0); */
 }
 
-.card:nth-child(2) {
-    transition-delay: 200ms;
- }
-.card:nth-child(4) {
-    transition-delay: 400ms;
- }
- .card:nth-child(3) {
-    transition-delay: 200ms;
- }
- .card:nth-child(5) {
-    transition-delay: 400ms;
- }
  .logpage{
     position: relative;
     display: flex;
@@ -146,16 +135,4 @@ body {
     .sec{
         margin-bottom: 4rem;
     }
-}
-@media (max-width: 620px){
-    
-    .hidden{
-        transition: all 500ms ease-out ;
-    }
-    .card:nth-child(2) {
-        transition-delay: 200ms;
-     }
-     .card:nth-child(3){
-        transition-delay: 400ms;
-     }
 }

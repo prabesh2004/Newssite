@@ -1,0 +1,31 @@
+[
+    {    "id":1,
+        "title": "Pawan Sarraf replaces Aarif Sheikh in Nepal’s ACC Emerging Teams Asia Cup squad",
+        "description": "Nepal’s spinning allrounder, Pawan Sarraf, has been called up to the national squad for the upcoming ACC Emerging Teams Asia Cup. Sarraf will replace Aarif Sheikh, who has withdrawn from the tournament due to family reasons. The tournament is scheduled to take place in Sri Lanka from July 13th to July 23rd, 2023.",
+        "image": "/sportimages/image1.jpeg",
+        "type": "Cricket",
+        "date": "2 November, 2023",
+        "paragraphs":["Nepal’s spinning allrounder, Pawan Sarraf, has been called up to the national squad for the upcoming ACC Emerging Teams Asia Cup. Sarraf will replace Aarif Sheikh, who has withdrawn from the tournament due to family reasons. The tournament is scheduled to take place in Sri Lanka from July 13th to July 23rd, 2023.",
+    "Aarif Sheikh, known for his stability in the lower-middle order, played a crucial role in Nepal’s recent Cricket World Cup Qualifier campaign. He scored a composed half-century against West Indies. However, Sheikh has decided to skip the Emerging Asia Cup to attend to personal matters."]
+    },
+    {    "id":2,
+        "title": "Harry Kane: Tottenham manager Ange Postecoglou says he will give striker his 'vision'",
+        "description": "New Tottenham Hotspur manager Ange Postecoglou says he will present his  for the club to striker Harry Kane as Bayern Munich pursue him.",
+        "image": "/sportimages/image2.jpg",
+        "type": "Football",
+        "date": "2 November, 2023",
+        "paragraphs":["Ange Postecoglou has been careful not to be drawn on the constant speculation linking Harry Kane with a transfer away from Tottenham Hotspur. Kane has entered the final year of his contract as a Spurs player with the 29-year-old believed to be assessing his options. Bayern Munich, Manchester United, Paris Saint-Germain and Real Madrid have all been linked.",
+    "“Kane is one of the premier strikers in the world and I want him involved here,” Postecoglou said. “I just want to introduce myself to Harry, give him my vision, get an understanding from him over what his vision is and try to be successful. My conversation with him will be about how we can make this club successful and there is no doubt that is what he wants as well.”"
+    ]
+    },
+    {    "id":3,
+        "title": "British Grand Prix 2023: 'Lando Norris shows McLaren progress but work still to do'",
+        "description": "Lando Norris first fell in love with Formula 1 watching Lewis Hamilton and Fernando Alonso battling at the front in silver McLarens at Silverstone back in 2007.",
+        "image": "/sportimages/image3.jpg",
+        "type": "Formula 1",
+        "date": "2 November, 2023",
+        "paragraphs":["From being the sixth quickest in the field on average over the first eight races of the season, and close to the slowest of all at a dire opening race of the year in Bahrain - home race of the team's owners - Norris qualified and finished fourth at the Red Bull Ring. A week later, the McLaren was the genuine second fastest car on the grid at Silverstone.",
+    "Norris and his impressive rookie team-mate Oscar Piastri qualified second and third to Verstappen, and they would almost certainly have finished in those positions, too, had a safety car period in the second half of the race not allowed Hamilton a cheap pit stop and vaulted him ahead of the Australian."
+    ]
+    }
+]

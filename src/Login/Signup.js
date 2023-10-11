@@ -37,7 +37,7 @@ function Signup() {
                 size={30}
               /></div>
     <h2 className='log-in'>Sky News</h2>
-    <h3 className='log-text'>Don't have a account </h3>
+    <h3 className='log-text'>Don't have an account </h3>
     <form onSubmit={handleSubmit}>
       <div className="input-group">
         <label htmlFor="username">Create Username</label>

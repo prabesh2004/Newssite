@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Articles.css';
-import articles from './Articles.json';
+import articles from '../../Json/Articles.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
@@ -35,7 +35,7 @@ function Articles() {
 
   return (
     <div className="sec article-section">
-      <div className="Article-intro">
+      <div className="Article-intro hide-ani">
         <h1 className="Article-intro-head">
           <span className="Article-intro-box"></span> Article <span className="Article-intro-box"></span>
         </h1>

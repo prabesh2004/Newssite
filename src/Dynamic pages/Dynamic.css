@@ -1,0 +1,122 @@
+section{
+    height: 100%;
+    width: 100%;
+}
+#dash{
+    width: 100%;
+    height: 1px;
+}
+#section{
+    position: relative;
+
+    font-family: 'Playfair Display', serif;
+        height: 100vh;
+    display: flex;
+    width: 100%;
+    height: max-content;
+   justify-content: flex-start;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    padding-top: 1.5rem;
+    background-image: linear-gradient(to bottom, black 40rem, var(--color-white) 30rem);
+    min-height: 100vh;
+}
+
+#sec{
+    color: var(--color-white);
+    width: min(115rem , 95%);
+    /* text-align: center; */
+    line-height: 2.5rem;
+    /* border: 1px solid black; */
+    margin-bottom: 5rem;
+}
+.type h1{
+  font-size: 3.25rem;
+   width: 100%;
+   background: transparent;
+    padding-left: 2rem;
+    text-decoration: underline;
+}
+.main-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-left: 20%;
+    margin-top: 2rem;
+   
+}
+#title{
+   
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 3rem;
+}
+#place-time{
+    font-family: "poppins";
+    margin-top: 2rem;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    font-size: 3rem;
+}
+.imagebox{
+    margin-top: 1rem;
+    height: 45rem;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+#image{
+ height: 100%;
+ width: 100%;
+ object-fit: cover;
+}
+.Sports{
+    color: var(--color-purple);
+    background: var(--color-purple);
+}
+.World{
+    color: var(--color-blue);
+    background: var(--color-blue);
+}
+.Local{
+    color: var(--color-red);
+    background: var(--color-red);
+}
+.Notfound{
+    height: 100vh;
+    font-size: 4rem;
+    text-align: center;
+}
+.dec{
+    margin-top: 2rem;
+    gap: 2rem;
+    color: var(--color-black);
+    font-size: 3rem;
+}
+.dec h1{
+    margin-bottom: 1rem;
+}
+.description{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: var(--color-gray2);
+}
+.dec p{
+    margin-top: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    padding-right: 20%;
+    line-height: 3rem;
+    font-size: 2rem;
+}
+@media(max-width : 1000px){
+    .main-content{
+        padding-left: 5%;
+    }
+}
