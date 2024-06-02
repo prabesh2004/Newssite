@@ -61,10 +61,10 @@ function Signin(){
           </div>
           <Link to={"/signup"}><h3 className="log-text">Don't Have an account? <span>SIGN UP</span></h3></Link>
           <div className="socials">
-          <FaGoogle size={30}/>
-            <FaFacebook size={30}/>
+          <FaGoogle size={30} />
+            <FaFacebook size={30} to="https://www.facebook.com/prabesh.khanal.7906"/>
             <FaTwitter size={30}/>
-            <FaGithub size={30}/>
+            <FaGithub size={30} to="https://github.com/prabesh2004/Newssite"/>
           </div>
         </form>
       </div>
