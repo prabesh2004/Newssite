@@ -8,7 +8,6 @@ function Dynamic({ Data, newstype }) {
   const newsItem = Data.find((item) => item.id === newsId);
 
   useEffect(() => {
-    // Scroll to the top when the component mounts
     window.scrollTo(0, -100);
   }, []);
 

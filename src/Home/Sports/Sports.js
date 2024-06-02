@@ -11,9 +11,6 @@ function truncateText(text, maxWords) {
   }
   return text;
 }
-
-
-
 function Sports() {
   return (
     <div className="sec sport-section">
