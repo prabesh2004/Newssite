@@ -54,7 +54,7 @@ import WorldData from "./Json/World.json"
         path: "/weather",
         element: <div className="section">
         <Navbar/>
-        <div className='news-title'>Navbar ! Comming soon.....</div>
+        <div className='news-title'>Weather ! Comming soon.....</div>
 
     </div>,
       },{
