@@ -28,7 +28,7 @@ function Local() {
           <div className="localnews-card hidden card" key={index}>
           
             <div className="news-image ">
-              <img className="news-image-img" src={item.image} alt="News image" />
+              <img className="news-image-img" src={item.image} alt={item.title} />
             </div>  
             <div className="news-content">
               <h1 className="news-title">{truncateText(item.title, 12)}</h1>
